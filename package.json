@@ -1,0 +1,33 @@
+{
+  "name": "libpoc",
+  "version": "0.1.0",
+  "description": "ES6 Node lib example",
+  "main": "dist/libpoc.cjs.js",
+  "module": "dist/libpoc.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operation-orange/libpoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/operation-orange/libpoc/issues"
+  },
+  "homepage": "https://github.com/operation-orange/libpoc#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.55.0",
+    "rollup-plugin-babel": "^3.0.3"
+  }
+}
